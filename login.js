@@ -5,7 +5,7 @@ let login = (event) => {
   let email = emailInput.value;
   let pass = passwordInput.value;
   let userIndex = users.findIndex((el) => el.email == email && el.pass == pass);
-  !userIndex
+  userIndex == -1
     ? alert("Wrong username or password")
     : (window.location.href = "./foods&drinks/food&drinks.html");
 };
